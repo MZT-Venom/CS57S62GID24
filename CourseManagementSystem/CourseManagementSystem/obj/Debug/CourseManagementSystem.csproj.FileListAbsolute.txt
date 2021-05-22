@@ -8,3 +8,4 @@ C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\Cou
 C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csproj.CoreCompileInputs.cache
 C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.exe
 C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.pdb
+C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.ChangePassword.resources
