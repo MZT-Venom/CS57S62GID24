@@ -1,0 +1,10 @@
+C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\bin\Debug\CourseManagementSystem.exe.config
+C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\bin\Debug\CourseManagementSystem.exe
+C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\bin\Debug\CourseManagementSystem.pdb
+C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csprojAssemblyReference.cache
+C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Login.resources
+C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Properties.Resources.resources
+C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csproj.GenerateResource.cache
+C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.exe
+C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.pdb
