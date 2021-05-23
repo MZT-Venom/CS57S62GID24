@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace CourseManagementSystem
 {
-    public partial class ChangePassword : Form
+    public partial class Student : Form
     {
-        public ChangePassword()
+        public Student()
         {
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
