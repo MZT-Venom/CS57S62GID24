@@ -16,5 +16,10 @@ namespace CourseManagementSystem
         {
             InitializeComponent();
         }
+
+        private void Registered_Students_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

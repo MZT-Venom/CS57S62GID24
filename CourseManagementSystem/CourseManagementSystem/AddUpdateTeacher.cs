@@ -21,5 +21,15 @@ namespace CourseManagementSystem
         {
             MessageBox.Show("Course Managment System is used to manage the courses throught the Study!!!");
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
