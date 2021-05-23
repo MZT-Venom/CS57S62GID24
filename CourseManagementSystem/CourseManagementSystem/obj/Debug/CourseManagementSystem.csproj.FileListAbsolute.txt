@@ -9,3 +9,14 @@ C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\Cou
 C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.exe
 C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.pdb
 C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.ChangePassword.resources
+C:\Users\abbut\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\bin\Debug\CourseManagementSystem.exe.config
+C:\Users\abbut\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\bin\Debug\CourseManagementSystem.exe
+C:\Users\abbut\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\bin\Debug\CourseManagementSystem.pdb
+C:\Users\abbut\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\abbut\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.ChangePassword.resources
+C:\Users\abbut\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Login.resources
+C:\Users\abbut\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Properties.Resources.resources
+C:\Users\abbut\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Student.resources
+C:\Users\abbut\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csproj.GenerateResource.Cache
+C:\Users\abbut\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.exe
+C:\Users\abbut\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.pdb
