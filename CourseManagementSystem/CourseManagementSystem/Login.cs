@@ -26,5 +26,17 @@ namespace CourseManagementSystem
         {
             this.Close();
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                password.UseSystemPasswordChar=false;
+            }
+            else
+            {
+                password.UseSystemPasswordChar = true;
+            }
+        }
     }
 }
