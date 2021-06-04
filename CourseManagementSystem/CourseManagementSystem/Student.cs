@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,16 +7,92 @@ using System.Windows.Forms;
 
 namespace CourseManagementSystem
 {
-    public partial class Student : Form
+    class Student : Person
     {
-        public Student()
+        private string name;
+        private string cnic;
+        private string email;
+        private DateTime dob;
+        private string regNo;
+        public string Name
         {
-            InitializeComponent();
+            get
+            {
+                return name;
+            }
+            set
+            {
+                bool flag = true;
+                if (value.Length <= 20)
+                {
+                    for(int i = 0; i < value.Length; i++)
+                    {
+                        if(!(value[i]>='A'&&value[i]<='Z'||value[i]>='a'&&value[i]<='z'||value[i]==' '))
+                        {
+                            flag = false;
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    flag = false;
+                }
+                if (flag == true)
+                {
+                    name = value;
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Name", "Error");
+                }
+            }
+        }
+        public string Cnic
+        {
+            get
+            {
+                return cnic;
+            }
+            set
+            {
+                bool flag = true;
+                if (value.Length == 13)
+                {
+                    for(int i = 0; i < 13; i++)
+                    {
+                        if (!(value[i] >= '0' && value[i] <= '9'))
+                        {
+                            flag = false;
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    flag = false;
+                }
+                if (flag == true)
+                {
+                    cnic = value;
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Cnic", "Error");
+                }
+            }
+        }
+        public DateTime Dob
+        {
+            get
+            {
+                return dob;
+            }
+            set
+            {
+                
+            }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }
