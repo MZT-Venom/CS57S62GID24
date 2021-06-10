@@ -12,6 +12,7 @@ namespace CourseManagementSystem
 {
     public partial class Manage_Courses : Form
     {
+        Driver driver = new Driver();
         public Manage_Courses()
         {
             InitializeComponent();
@@ -45,7 +46,10 @@ namespace CourseManagementSystem
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Login log = new Login();
+            log.Show();
+            this.Hide();
+            log.BringToFront();
         }
 
         private void changePasswordToolStripMenuItem_Click_1(object sender, EventArgs e)
@@ -54,6 +58,16 @@ namespace CourseManagementSystem
             chngpass.Show();
             this.Hide();
             chngpass.BringToFront();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            driver.bsCourse.DelCourse();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

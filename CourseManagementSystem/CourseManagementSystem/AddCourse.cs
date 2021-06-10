@@ -12,6 +12,8 @@ namespace CourseManagementSystem
 {
     public partial class AddCourse : Form
     {
+        MSCourses ms = new MSCourses();
+        BSCourses bs = new BSCourses();
         public AddCourse()
         {
             InitializeComponent();
@@ -24,6 +26,29 @@ namespace CourseManagementSystem
             addcr.Show();
             this.Hide();
             addcr.BringToFront();
+            if (MScourse.Checked)
+            {
+                ms.CourseCode = coursecode.Text;
+                ms.CourseCode = coursename.Text;
+                string crdt = crdthr.Text;
+                int cr = Int16.Parse(crdt);
+                ms.CrHr = cr;
+                string semes = sem.SelectedItem.ToString();
+                int semest = Int16.Parse(semes);
+                ms.Semester = semest;
+                ms.Outline = outline.Text;
+            }
+            else if (Bscourse.Checked) {
+                bs.CourseCode = coursecode.Text;
+                bs.CourseCode = coursename.Text;
+                string crdt = crdthr.Text;
+                int cr = Int16.Parse(crdt);
+                bs.CrHr = cr;
+                string semes = sem.SelectedItem.ToString();
+                int semest = Int16.Parse(semes);
+                bs.Semester = semest;
+                ms.Outline = outline.Text;
+            }
         }
 
         private void AddCourse_Load(object sender, EventArgs e)
@@ -38,15 +63,18 @@ namespace CourseManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AddCourse addcr = new AddCourse();
-            addcr.Show();
+            Manage_Courses mngcr = new Manage_Courses();
+            mngcr.Show();
             this.Hide();
-            addcr.BringToFront();
+            mngcr.BringToFront();
         }
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Login log = new Login();
+            log.Show();
+            this.Hide();
+            log.BringToFront();
         }
 
         private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
@@ -55,6 +83,30 @@ namespace CourseManagementSystem
             chngpass.Show();
             this.Hide();
             chngpass.BringToFront();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            sem.Items.Add("1");
+            sem.Items.Add("2");
+            sem.Items.Add("3");
+            sem.Items.Add("4");
+        }
+
+        private void sem_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void Bscourse_CheckedChanged(object sender, EventArgs e)
+        {
+            sem.Items.Add("1");
+            sem.Items.Add("2");
+            sem.Items.Add("3");
+            sem.Items.Add("4");
+            sem.Items.Add("5");
+            sem.Items.Add("6");
+            sem.Items.Add("7");
+            sem.Items.Add("8");
         }
     }
 }

@@ -52,7 +52,10 @@ namespace CourseManagementSystem
         private void logOutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
-            Application.Exit();
+            Login log = new Login();
+            log.Show();
+            this.Hide();
+            log.BringToFront();
         }
 
         private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)

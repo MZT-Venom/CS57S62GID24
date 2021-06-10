@@ -8,7 +8,7 @@ namespace CourseManagementSystem
 {
     class Driver
     {
-        BsCourseManagement bsCourse = BsCourseManagement.GetObj();
-        MsCourseManagement msCourse = MsCourseManagement.GetObj();
+       public BsCourseManagement bsCourse = BsCourseManagement.GetObj();
+        public MsCourseManagement msCourse = MsCourseManagement.GetObj();
     }
 }
