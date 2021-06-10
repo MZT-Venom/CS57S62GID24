@@ -90,9 +90,54 @@ namespace CourseManagementSystem
             }
             set
             {
-                
+                dob = value; 
             }
         }
+        public string Email
+        {
+            get
+            {
+                return email;
+            }
+            set
+            {
+                email = value;
+            }
+        }
+        public string RegNo
+        {
+            get
+            {
+                return regNo;
+            }
+            set
+            {
+                int len = value.Length;
+                bool a = false;
+                if (len >= 9 && len <= 11)
+                {
+                    if (value[0] == '2' && value[1] == '0' && value[4] == '-' && value[7] == '-' && value[2] >= '0' && value[2] <= '9' && value[3] >= '0' && value[3] <= '9' && value[5] >= 'A' && value[5] <= 'Z' && value[6] >= 'A' && value[6] <= 'Z')
+                    {
 
+                        for (int i = 8; i < len; i++)
+                        {
+                            if (value[i] >= '0' && value[i] <= '9')
+                            {
+                                a = true;
+                            }
+                            else
+                            {
+                                a = false;
+                                break;
+                            }
+                        }
+                    }
+                }
+                if (a == true)
+                {
+                    regNo = value;
+                }
+            }
+        }
     }
 }
