@@ -115,11 +115,11 @@
       <DependentUpon>Registered Students.cs</DependentUpon>
     </Compile>
     <Compile Include="Student.cs" />
-    <Compile Include="StudentForm.cs">
+    <Compile Include="Student2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentForm.Designer.cs">
-      <DependentUpon>StudentForm.cs</DependentUpon>
+    <Compile Include="Student2.Designer.cs">
+      <DependentUpon>Student2.cs</DependentUpon>
     </Compile>
     <Compile Include="Teacher.cs">
       <SubType>Form</SubType>
@@ -167,8 +167,8 @@
     <EmbeddedResource Include="Registered Students.resx">
       <DependentUpon>Registered Students.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentForm.resx">
-      <DependentUpon>StudentForm.cs</DependentUpon>
+    <EmbeddedResource Include="Student2.resx">
+      <DependentUpon>Student2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Teacher.resx">
       <DependentUpon>Teacher.cs</DependentUpon>

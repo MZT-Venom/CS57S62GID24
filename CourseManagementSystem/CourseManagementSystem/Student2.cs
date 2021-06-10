@@ -10,16 +10,21 @@ using System.Windows.Forms;
 
 namespace CourseManagementSystem
 {
-    public partial class StudentForm : Form
+    public partial class Student2 : Form
     {
-        public StudentForm()
+        public Student2()
         {
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            this.Close();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
