@@ -7,13 +7,14 @@ using System.Windows.Forms;
 
 namespace CourseManagementSystem
 {
-    abstract class Student : Person
+    class Teacherr: Instructor
     {
         private string name;
         private string cnic;
         private string email;
         private DateTime dob;
-        private string regNo;
+        private string instructorId;
+
         public string Name
         {
             get
@@ -25,9 +26,9 @@ namespace CourseManagementSystem
                 bool flag = true;
                 if (value.Length <= 20)
                 {
-                    for(int i = 0; i < value.Length; i++)
+                    for (int i = 0; i < value.Length; i++)
                     {
-                        if(!(value[i]>='A'&&value[i]<='Z'||value[i]>='a'&&value[i]<='z'||value[i]==' '))
+                        if (!(value[i] >= 'A' && value[i] <= 'Z' || value[i] >= 'a' && value[i] <= 'z' || value[i] == ' '))
                         {
                             flag = false;
                             break;
@@ -59,7 +60,7 @@ namespace CourseManagementSystem
                 bool flag = true;
                 if (value.Length == 13)
                 {
-                    for(int i = 0; i < 13; i++)
+                    for (int i = 0; i < 13; i++)
                     {
                         if (!(value[i] >= '0' && value[i] <= '9'))
                         {
@@ -90,7 +91,7 @@ namespace CourseManagementSystem
             }
             set
             {
-                dob = value; 
+                dob = value;
             }
         }
         public string Email
@@ -104,39 +105,15 @@ namespace CourseManagementSystem
                 email = value;
             }
         }
-        public string RegNo
+        public string InstructorId
         {
             get
             {
-                return regNo;
+                return instructorId;
             }
             set
             {
-                int len = value.Length;
-                bool a = false;
-                if (len >= 9 && len <= 11)
-                {
-                    if (value[0] == '2' && value[1] == '0' && value[4] == '-' && value[7] == '-' && value[2] >= '0' && value[2] <= '9' && value[3] >= '0' && value[3] <= '9' && value[5] >= 'A' && value[5] <= 'Z' && value[6] >= 'A' && value[6] <= 'Z')
-                    {
-
-                        for (int i = 8; i < len; i++)
-                        {
-                            if (value[i] >= '0' && value[i] <= '9')
-                            {
-                                a = true;
-                            }
-                            else
-                            {
-                                a = false;
-                                break;
-                            }
-                        }
-                    }
-                }
-                if (a == true)
-                {
-                    regNo = value;
-                }
+                instructorId = value;
             }
         }
     }
