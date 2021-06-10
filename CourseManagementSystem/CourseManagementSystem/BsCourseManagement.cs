@@ -9,7 +9,7 @@ namespace CourseManagementSystem
     class BsCourseManagement
     {
         private static BsCourseManagement obj = null;
-        private HashSet<BSCourses> BsCourseList = new HashSet<BSCourses>();
+        public HashSet<BSCourses> BsCourseList = new HashSet<BSCourses>();
         public bool AddCourse(BSCourses course)
         {
             return BsCourseList.Add(course);
