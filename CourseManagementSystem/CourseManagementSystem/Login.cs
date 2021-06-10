@@ -14,7 +14,6 @@ namespace CourseManagementSystem
     {
         String Username;
         String Password;
-        Login log = new Login();
         public Login()
         {
             InitializeComponent();
@@ -57,7 +56,7 @@ namespace CourseManagementSystem
 
                 Student2 std = new Student2();
                 std.Show();
-                log.Hide();
+                this.Hide();
                 std.BringToFront();
             }
             else if (Username.Contains("instructor"))
@@ -65,7 +64,7 @@ namespace CourseManagementSystem
 
                 Teacher tch = new Teacher();
                 tch.Show();
-                log.Hide();
+                this.Hide();
                 tch.BringToFront();
             }
             else {

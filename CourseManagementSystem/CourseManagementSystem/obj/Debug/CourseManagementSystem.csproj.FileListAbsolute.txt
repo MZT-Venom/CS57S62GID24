@@ -28,7 +28,6 @@ C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\Cou
 C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Manage_Students.resources
 C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.ManageTeacher.resources
 C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Registered_Students.resources
-C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Student.resources
 C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Teacher.resources
 C:\Users\abbut\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.AddCourse.resources
 C:\Users\abbut\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.AddupdateStudent.resources
@@ -40,3 +39,4 @@ C:\Users\abbut\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManage
 C:\Users\abbut\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Registered_Students.resources
 C:\Users\abbut\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Student2.resources
 C:\Users\abbut\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Teacher.resources
+C:\Users\VENOM\OneDrive\Documents\GitHub\CS57S62GID24\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Student2.resources
