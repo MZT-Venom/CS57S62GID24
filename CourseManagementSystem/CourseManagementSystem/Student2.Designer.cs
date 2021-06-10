@@ -43,8 +43,13 @@ namespace CourseManagementSystem
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -53,10 +58,9 @@ namespace CourseManagementSystem
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(22, 25);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(15, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 27);
+            this.label1.Size = new System.Drawing.Size(71, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Semester";
             // 
@@ -66,10 +70,9 @@ namespace CourseManagementSystem
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(22, 88);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(15, 57);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 27);
+            this.label2.Size = new System.Drawing.Size(55, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Course";
             // 
@@ -80,29 +83,26 @@ namespace CourseManagementSystem
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(128, 64);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(85, 42);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(658, 138);
+            this.panel1.Size = new System.Drawing.Size(439, 90);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(236, 85);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox2.Location = new System.Drawing.Point(157, 55);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(386, 28);
+            this.comboBox2.Size = new System.Drawing.Size(259, 21);
             this.comboBox2.TabIndex = 3;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(236, 22);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox1.Location = new System.Drawing.Point(157, 14);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(386, 28);
+            this.comboBox1.Size = new System.Drawing.Size(259, 21);
             this.comboBox1.TabIndex = 2;
             // 
             // dataGridView1
@@ -115,11 +115,10 @@ namespace CourseManagementSystem
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(62, 235);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView1.Location = new System.Drawing.Point(41, 153);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(814, 231);
+            this.dataGridView1.Size = new System.Drawing.Size(811, 198);
             this.dataGridView1.TabIndex = 3;
             // 
             // Column1
@@ -162,10 +161,9 @@ namespace CourseManagementSystem
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.button1.Location = new System.Drawing.Point(74, 476);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(50, 376);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 35);
+            this.button1.Size = new System.Drawing.Size(121, 23);
             this.button1.TabIndex = 4;
             this.button1.Text = "UnRegister";
             this.button1.UseVisualStyleBackColor = false;
@@ -175,34 +173,73 @@ namespace CourseManagementSystem
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.button2.Location = new System.Drawing.Point(724, 476);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(737, 376);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(152, 35);
+            this.button2.Size = new System.Drawing.Size(101, 23);
             this.button2.TabIndex = 5;
             this.button2.Text = "Register";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.optionsToolStripMenuItem,
+            this.logOutToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(864, 24);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // optionsToolStripMenuItem
+            // 
+            this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.changePasswordToolStripMenuItem});
+            this.optionsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.optionsToolStripMenuItem.Text = "Options";
+            this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
+            // 
+            // logOutToolStripMenuItem
+            // 
+            this.logOutToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.logOutToolStripMenuItem.Text = "LogOut";
+            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
+            // 
+            // changePasswordToolStripMenuItem
+            // 
+            this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.changePasswordToolStripMenuItem.Text = "Change Password";
+            this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
+            // 
             // Student2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(929, 579);
+            this.ClientSize = new System.Drawing.Size(864, 458);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Student2";
             this.Text = "Student2";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -221,5 +258,9 @@ namespace CourseManagementSystem
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
     }
 }

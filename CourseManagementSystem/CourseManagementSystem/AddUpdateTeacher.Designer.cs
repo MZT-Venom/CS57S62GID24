@@ -32,7 +32,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,6 +52,7 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -63,23 +63,24 @@
             this.menuStrip1.BackgroundImage = global::CourseManagementSystem.Properties.Resources.images__7_;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.optionsToolStripMenuItem});
+            this.optionsToolStripMenuItem,
+            this.logOutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(807, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(609, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.changePasswordToolStripMenuItem,
-            this.logoutToolStripMenuItem});
+            this.changePasswordToolStripMenuItem});
             this.optionsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optionsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.optionsToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(95, 29);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(62, 22);
             this.optionsToolStripMenuItem.Text = "Options";
             // 
             // changePasswordToolStripMenuItem
@@ -88,16 +89,9 @@
             this.changePasswordToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.changePasswordToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.changePasswordToolStripMenuItem.Text = "Change Password";
-            // 
-            // logoutToolStripMenuItem
-            // 
-            this.logoutToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.logoutToolStripMenuItem.Text = "logout";
+            this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -106,10 +100,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(75, 55);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(50, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 25);
+            this.label1.Size = new System.Drawing.Size(49, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Name";
             // 
@@ -119,10 +112,9 @@
             this.label2.BackColor = System.Drawing.Color.Lavender;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(75, 100);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(50, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 25);
+            this.label2.Size = new System.Drawing.Size(23, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "ID";
             // 
@@ -133,10 +125,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label3.Location = new System.Drawing.Point(75, 140);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(50, 91);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 25);
+            this.label3.Size = new System.Drawing.Size(43, 17);
             this.label3.TabIndex = 3;
             this.label3.Text = "CNIC";
             // 
@@ -147,10 +138,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(75, 182);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(50, 118);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 25);
+            this.label4.Size = new System.Drawing.Size(99, 17);
             this.label4.TabIndex = 4;
             this.label4.Text = "Qualification";
             // 
@@ -161,10 +151,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(76, 222);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(51, 144);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 25);
+            this.label5.Size = new System.Drawing.Size(67, 17);
             this.label5.TabIndex = 5;
             this.label5.Text = "Email ID";
             // 
@@ -175,10 +164,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label6.Location = new System.Drawing.Point(75, 263);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(50, 171);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(131, 25);
+            this.label6.Size = new System.Drawing.Size(100, 17);
             this.label6.TabIndex = 6;
             this.label6.Text = "Date of Birth";
             // 
@@ -189,10 +177,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label7.Location = new System.Drawing.Point(75, 303);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(50, 197);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(126, 25);
+            this.label7.Size = new System.Drawing.Size(94, 17);
             this.label7.TabIndex = 7;
             this.label7.Text = "Designation";
             // 
@@ -203,10 +190,9 @@
             this.AddteahcerBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddteahcerBack.ForeColor = System.Drawing.Color.MidnightBlue;
             this.AddteahcerBack.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.AddteahcerBack.Location = new System.Drawing.Point(279, 382);
-            this.AddteahcerBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.AddteahcerBack.Location = new System.Drawing.Point(186, 248);
             this.AddteahcerBack.Name = "AddteahcerBack";
-            this.AddteahcerBack.Size = new System.Drawing.Size(112, 35);
+            this.AddteahcerBack.Size = new System.Drawing.Size(75, 23);
             this.AddteahcerBack.TabIndex = 8;
             this.AddteahcerBack.Text = "Back";
             this.AddteahcerBack.UseVisualStyleBackColor = false;
@@ -219,78 +205,72 @@
             this.AddTeacherbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddTeacherbtn.ForeColor = System.Drawing.Color.MidnightBlue;
             this.AddTeacherbtn.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.AddTeacherbtn.Location = new System.Drawing.Point(426, 382);
-            this.AddTeacherbtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.AddTeacherbtn.Location = new System.Drawing.Point(284, 248);
             this.AddTeacherbtn.Name = "AddTeacherbtn";
-            this.AddTeacherbtn.Size = new System.Drawing.Size(112, 35);
+            this.AddTeacherbtn.Size = new System.Drawing.Size(75, 23);
             this.AddTeacherbtn.TabIndex = 9;
             this.AddTeacherbtn.Text = "Done";
             this.AddTeacherbtn.UseVisualStyleBackColor = false;
+            this.AddTeacherbtn.Click += new System.EventHandler(this.AddTeacherbtn_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(279, 55);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Location = new System.Drawing.Point(186, 36);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(258, 26);
+            this.textBox1.Size = new System.Drawing.Size(182, 20);
             this.textBox1.TabIndex = 10;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(279, 135);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox2.Location = new System.Drawing.Point(186, 88);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(258, 26);
+            this.textBox2.Size = new System.Drawing.Size(182, 20);
             this.textBox2.TabIndex = 11;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(279, 95);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox3.Location = new System.Drawing.Point(186, 62);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(258, 26);
+            this.textBox3.Size = new System.Drawing.Size(182, 20);
             this.textBox3.TabIndex = 12;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(279, 217);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox4.Location = new System.Drawing.Point(186, 141);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(258, 26);
+            this.textBox4.Size = new System.Drawing.Size(182, 20);
             this.textBox4.TabIndex = 13;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(279, 257);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dateTimePicker1.Location = new System.Drawing.Point(186, 167);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(258, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(182, 20);
             this.dateTimePicker1.TabIndex = 14;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(279, 175);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox1.Location = new System.Drawing.Point(186, 114);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(258, 28);
+            this.comboBox1.Size = new System.Drawing.Size(182, 21);
             this.comboBox1.TabIndex = 15;
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(279, 297);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox2.Location = new System.Drawing.Point(186, 193);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(258, 28);
+            this.comboBox2.Size = new System.Drawing.Size(182, 21);
             this.comboBox2.TabIndex = 16;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CourseManagementSystem.Properties.Resources.close_button_png_30247;
-            this.pictureBox1.Location = new System.Drawing.Point(890, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(593, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 32);
+            this.pictureBox1.Size = new System.Drawing.Size(25, 21);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
@@ -302,9 +282,10 @@
             this.radioButton1.BackColor = System.Drawing.Color.Lavender;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.radioButton1.Location = new System.Drawing.Point(279, 22);
+            this.radioButton1.Location = new System.Drawing.Point(186, 14);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(99, 24);
+            this.radioButton1.Size = new System.Drawing.Size(72, 17);
             this.radioButton1.TabIndex = 18;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Teacher";
@@ -317,9 +298,10 @@
             this.radioButton2.BackColor = System.Drawing.Color.Lavender;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.radioButton2.Location = new System.Drawing.Point(406, 22);
+            this.radioButton2.Location = new System.Drawing.Point(271, 14);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(60, 24);
+            this.radioButton2.Size = new System.Drawing.Size(42, 17);
             this.radioButton2.TabIndex = 19;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "GA";
@@ -346,26 +328,32 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(116, 58);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(77, 38);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(599, 450);
+            this.panel1.Size = new System.Drawing.Size(449, 320);
             this.panel1.TabIndex = 20;
+            // 
+            // logOutToolStripMenuItem
+            // 
+            this.logOutToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(60, 22);
+            this.logOutToolStripMenuItem.Text = "LogOut";
+            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
             // AddUpdateTeacher
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(807, 554);
+            this.ClientSize = new System.Drawing.Size(609, 392);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AddUpdateTeacher";
             this.Text = "AddUpdateTeacher";
             this.menuStrip1.ResumeLayout(false);
@@ -399,10 +387,10 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
     }
 }

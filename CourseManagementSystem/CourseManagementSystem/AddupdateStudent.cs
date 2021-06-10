@@ -19,7 +19,10 @@ namespace CourseManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Manage_Students mngstd = new Manage_Students();
+            mngstd.Show();
+            this.Hide();
+            mngstd.BringToFront();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -30,6 +33,34 @@ namespace CourseManagementSystem
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Manage_Students mngstd = new Manage_Students();
+            MessageBox.Show("Student has been added successfully!");
+            mngstd.Show();
+            this.Hide();
+            mngstd.BringToFront();
+        }
+
+        private void AddupdateStudent_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logOutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+            Application.Exit();
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangePassword chngpass = new ChangePassword();
+            chngpass.Show();
+            this.Hide();
+            chngpass.BringToFront();
         }
     }
 }

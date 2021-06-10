@@ -21,5 +21,42 @@ namespace CourseManagementSystem
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ManageTeacher mngtch = new ManageTeacher();
+            mngtch.Show();
+            this.Hide();
+            mngtch.BringToFront();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Manage_Courses mngcr = new Manage_Courses();
+            mngcr.Show();
+            this.Hide();
+            mngcr.BringToFront();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Manage_Students mngstd = new Manage_Students();
+            mngstd.Show();
+            this.Hide();
+            mngstd.BringToFront();
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangePassword chngpass = new ChangePassword();
+            chngpass.Show();
+            this.Hide();
+            chngpass.BringToFront();
+        }
     }
 }

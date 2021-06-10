@@ -12,6 +12,9 @@ namespace CourseManagementSystem
 {
     public partial class Login : Form
     {
+        String Username;
+        String Password;
+        Login log = new Login();
         public Login()
         {
             InitializeComponent();
@@ -37,6 +40,42 @@ namespace CourseManagementSystem
             {
                 password.UseSystemPasswordChar = true;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Username = LoginUN.Text;
+            if (Username.Contains("Admin"))
+            {
+                Admin ad = new Admin();
+                ad.Show();
+                this.Hide();
+                ad.BringToFront();
+            }
+            else if (Username.Contains("student"))
+            {
+
+                Student2 std = new Student2();
+                std.Show();
+                log.Hide();
+                std.BringToFront();
+            }
+            else if (Username.Contains("instructor"))
+            {
+
+                Teacher tch = new Teacher();
+                tch.Show();
+                log.Hide();
+                tch.BringToFront();
+            }
+            else {
+                MessageBox.Show("Incorrect Username or Password!");
+            }
+        }
+
+        private void LoginUN_TextChanged(object sender, EventArgs e)
+        {
+          //  Username = LoginUN.Text;
         }
     }
 }
