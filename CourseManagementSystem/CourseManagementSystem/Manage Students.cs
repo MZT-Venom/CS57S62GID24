@@ -16,5 +16,35 @@ namespace CourseManagementSystem
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Admin ad = new Admin();
+            ad.Show();
+            this.Hide();
+            ad.BringToFront();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddupdateStudent addstd = new AddupdateStudent();
+            addstd.Show();
+            this.Hide();
+            addstd.BringToFront();
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangePassword chngpass = new ChangePassword();
+            chngpass.Show();
+            this.Hide();
+            chngpass.BringToFront();
+        }
     }
 }

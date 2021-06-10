@@ -19,7 +19,10 @@ namespace CourseManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Course Managment System is used to manage the courses throught the Study!!!");
+            ManageTeacher mngtch = new ManageTeacher();
+            mngtch.Show();
+            this.Hide();
+            mngtch.BringToFront();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -30,6 +33,28 @@ namespace CourseManagementSystem
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void AddTeacherbtn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Instructor has been added successfully!");
+            ManageTeacher mngtch = new ManageTeacher();
+            mngtch.Show();
+            this.Hide();
+            mngtch.BringToFront();
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangePassword chngpass = new ChangePassword();
+            chngpass.Show();
+            this.Hide();
+            chngpass.BringToFront();
         }
     }
 }
