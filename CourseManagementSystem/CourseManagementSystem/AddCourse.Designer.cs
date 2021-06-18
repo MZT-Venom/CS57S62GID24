@@ -39,7 +39,6 @@
             this.coursename = new System.Windows.Forms.TextBox();
             this.coursecode = new System.Windows.Forms.TextBox();
             this.crdthr = new System.Windows.Forms.TextBox();
-            this.sem = new System.Windows.Forms.ComboBox();
             this.outline = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -51,6 +50,7 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sem = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -156,15 +156,6 @@
             this.crdthr.Size = new System.Drawing.Size(142, 20);
             this.crdthr.TabIndex = 10;
             // 
-            // sem
-            // 
-            this.sem.FormattingEnabled = true;
-            this.sem.Location = new System.Drawing.Point(135, 147);
-            this.sem.Name = "sem";
-            this.sem.Size = new System.Drawing.Size(142, 21);
-            this.sem.TabIndex = 11;
-            this.sem.SelectedIndexChanged += new System.EventHandler(this.sem_SelectedIndexChanged);
-            // 
             // outline
             // 
             this.outline.Location = new System.Drawing.Point(135, 181);
@@ -236,6 +227,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.sem);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Bscourse);
             this.panel1.Controls.Add(this.coursecode);
@@ -249,7 +241,6 @@
             this.panel1.Controls.Add(this.outline);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.sem);
             this.panel1.Controls.Add(this.instructor);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Location = new System.Drawing.Point(72, 59);
@@ -308,6 +299,13 @@
             this.logOutToolStripMenuItem.Text = "LogOut";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
+            // sem
+            // 
+            this.sem.Location = new System.Drawing.Point(135, 144);
+            this.sem.Name = "sem";
+            this.sem.Size = new System.Drawing.Size(142, 20);
+            this.sem.TabIndex = 18;
+            // 
             // AddCourse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -343,7 +341,6 @@
         private System.Windows.Forms.TextBox coursename;
         private System.Windows.Forms.TextBox coursecode;
         private System.Windows.Forms.TextBox crdthr;
-        private System.Windows.Forms.ComboBox sem;
         private System.Windows.Forms.RichTextBox outline;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
@@ -355,5 +352,6 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
+        private System.Windows.Forms.TextBox sem;
     }
 }
