@@ -12,5 +12,6 @@ namespace CourseManagementSystem
         public MsCourseManagement msCourse = MsCourseManagement.GetObj();
         public UgStudentManagement ug = UgStudentManagement.getObj();
         public PgStudentManagement pg = PgStudentManagement.getObj();
+
     }
 }

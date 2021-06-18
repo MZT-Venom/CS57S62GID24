@@ -53,7 +53,24 @@ namespace CourseManagementSystem
 
         private void AddCourse_Load(object sender, EventArgs e)
         {
-
+            if (Bscourse.Checked)
+            {
+                sem.Items.Add("1");
+                sem.Items.Add("2");
+                sem.Items.Add("3");
+                sem.Items.Add("4");
+                sem.Items.Add("5");
+                sem.Items.Add("6");
+                sem.Items.Add("7");
+                sem.Items.Add("8");
+            }
+            else if (MScourse.Checked) {
+                sem.Items.Add("1");
+                sem.Items.Add("2");
+                sem.Items.Add("3");
+                sem.Items.Add("4");
+            }
+            sem.Items.Clear();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -99,14 +116,7 @@ namespace CourseManagementSystem
 
         private void Bscourse_CheckedChanged(object sender, EventArgs e)
         {
-            sem.Items.Add("1");
-            sem.Items.Add("2");
-            sem.Items.Add("3");
-            sem.Items.Add("4");
-            sem.Items.Add("5");
-            sem.Items.Add("6");
-            sem.Items.Add("7");
-            sem.Items.Add("8");
+            
         }
     }
 }

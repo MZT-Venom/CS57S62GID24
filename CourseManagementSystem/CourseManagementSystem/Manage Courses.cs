@@ -62,7 +62,7 @@ namespace CourseManagementSystem
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            driver.bsCourse.DelCourse();
+            //driver.bsCourse.DelCourse();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
