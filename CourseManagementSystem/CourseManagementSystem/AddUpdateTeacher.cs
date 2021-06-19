@@ -37,6 +37,7 @@ namespace CourseManagementSystem
 
         private void AddTeacherbtn_Click(object sender, EventArgs e)
         {
+
             MessageBox.Show("Instructor has been added successfully!");
             ManageTeacher mngtch = new ManageTeacher();
             mngtch.Show();

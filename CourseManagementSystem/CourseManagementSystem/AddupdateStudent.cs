@@ -12,6 +12,162 @@ namespace CourseManagementSystem
 {
     public partial class AddupdateStudent : Form
     {
+        public static bool validateName(string name) {
+            int size = name.Length;
+            bool flag = false;
+            for (int i = 0; i < size; i++) {
+                if ((name[i] >= 'a' && name[i] <= 'z') || (name[i] >= 'A' && name[i] <= 'Z') || (name[i] >= '0' && name[i] <= '9'))
+                {
+                    flag=true;
+                }
+                else {
+                    flag=false;
+                    break;
+                }
+            }
+            return flag;
+        }
+        public static bool validateRegisterationNumber(String regno)
+        {
+            bool flag = false;
+            int size = regno.Length;
+            if (regno[0] == '2' && regno[1] == '0')
+            {
+                flag = true;
+            }
+            else
+            {
+                flag = false;
+            }
+
+            if (flag == true)
+            {
+                for (int i = 2; i < 4; i++)
+                {
+                    if (regno[i] >= '0' && regno[i] <= '9')
+                    {
+                        flag = true;
+                    }
+                    else
+                    {
+                        flag = false;
+                    }
+                }
+            }
+            if (flag == true)
+            {
+                if (regno[4] == '-')
+                {
+                    flag = true;
+                }
+                else
+                {
+                    flag = false;
+                }
+            }
+            if (flag == true)
+            {
+                for (int i = 5; i < 7; i++)
+                {
+                    if (regno[i] >= 'A' && regno[i] <= 'Z')
+                    {
+                        flag = true;
+                    }
+                    else
+                    {
+                        flag = false;
+                    }
+                }
+            }
+            if (flag == true)
+            {
+                if (regno[7] == '-')
+                {
+                    flag = true;
+                }
+                else
+                {
+                    flag = false;
+                }
+            }
+            if (flag == true)
+            {
+                if (size == 10)
+                {
+                    for (int i = 8; i < 10; i++)
+                    {
+                        if (regno[i] >= '0' && regno[i] <= '9')
+                        {
+                            flag = true;
+                        }
+                        else
+                        {
+                            flag = false;
+                        }
+                    }
+                }
+                else if (size == 11)
+                {
+                    for (int i = 8; i < 11; i++)
+                    {
+                        if (regno[i] >= '0' && regno[i] <= '9')
+                        {
+                            flag = true;
+                        }
+                        else
+                        {
+                            flag = false;
+                        }
+                    }
+                }
+
+            }
+            return flag;
+        }
+        public static bool validatesem(string sem) {
+            bool flag = false;
+            int size = sem.Length;
+            for (int i = 0; i < size; i++) {
+                if (sem[i] >= '0' && sem[i] <= '9')
+                {
+                    flag = true;
+                }
+                else {
+                    flag = false;
+                    break;
+                }
+            }
+            return flag;
+        }
+        public static bool validateCnic(String num)
+        {
+            bool flag = false;
+            int size = num.Length;
+            if (size == 13)
+            {
+                for (int i = 0; i < size; i++)
+                {
+                    if (num[i] >= '0' && num[i] <= '9')
+                    {
+                        flag = true;
+
+                    }
+                    else
+                    {
+                        flag = false;
+                        break;
+                    }
+
+                }
+            }
+            else
+            {
+                flag = false;
+            }
+            return flag;
+
+        }
+
         public AddupdateStudent()
         {
             InitializeComponent();
