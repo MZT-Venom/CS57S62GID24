@@ -167,7 +167,32 @@ namespace CourseManagementSystem
             return flag;
 
         }
+        public static bool validateMail(String mail) {
+            bool flag = false;
+            int size = mail.Length;
+           
+            for (int i = 0; i < size; i++)
+            {
+                if (mail.Contains("@"))
+                {
+                    for (int j = 0; j < size; j++)
+                    {
+                        if (mail[j] == '.')
+                        {
+                            flag = true;
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    flag = false;
+                    break;
+                }
+            }
 
+            return flag;
+        }
         public AddupdateStudent()
         {
             InitializeComponent();
@@ -193,8 +218,39 @@ namespace CourseManagementSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if ((validateName(name.Text)) && (validateRegisterationNumber(Reg.Text)) && (validateMail(Email.Text)) && (validatesem(sem.Text)))
+            {
+                if (Msstd.Checked)
+                {
+                    PostGraduate pglist = new PostGraduate();
+                    pglist.Name = name.Text;
+                    pglist.RegNo = Reg.Text;
+                    int semes = Int16.Parse(sem.Text);
+                    pglist.Semester = semes;
+                    pglist.Cnic = cnic.Text;
+                    pglist.Email = Email.Text;
+                    pglist.Dob = date.Value;
+
+                }
+                else if (Bsstd.Checked)
+                {
+                    UnderGraduate Uglist = new UnderGraduate();
+                    Uglist.Name = name.Text;
+                    Uglist.RegNo = Reg.Text;
+                    int semes = Int16.Parse(sem.Text);
+                    Uglist.Semester = semes;
+                    Uglist.Cnic = cnic.Text;
+                    Uglist.Email = Email.Text;
+                    Uglist.Dob = date.Value;
+                }
+
+                MessageBox.Show("Student has been added successfully!");
+            }
+            else {
+                MessageBox.Show("Invalid Data!");
+            }
             Manage_Students mngstd = new Manage_Students();
-            MessageBox.Show("Student has been added successfully!");
+            
             mngstd.Show();
             this.Hide();
             mngstd.BringToFront();

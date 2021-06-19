@@ -38,13 +38,13 @@
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageCoursesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Actions = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.manageCoursesBindingSource)).BeginInit();
@@ -134,6 +134,31 @@
             // 
             this.manageCoursesBindingSource.DataSource = typeof(CourseManagementSystem.Manage_Courses);
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.Color.LightBlue;
+            this.radioButton1.Location = new System.Drawing.Point(602, 64);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(75, 17);
+            this.radioButton1.TabIndex = 7;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "BS Course";
+            this.radioButton1.UseVisualStyleBackColor = false;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.BackColor = System.Drawing.Color.LightBlue;
+            this.radioButton2.ForeColor = System.Drawing.Color.White;
+            this.radioButton2.Location = new System.Drawing.Point(699, 64);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(77, 17);
+            this.radioButton2.TabIndex = 8;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "MS Course";
+            this.radioButton2.UseVisualStyleBackColor = false;
+            // 
             // Column1
             // 
             this.Column1.HeaderText = "CourseCode";
@@ -167,31 +192,6 @@
             this.Actions.HeaderText = "Actions";
             this.Actions.Name = "Actions";
             this.Actions.Text = "Delete";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.LightBlue;
-            this.radioButton1.Location = new System.Drawing.Point(602, 64);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(75, 17);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "BS Course";
-            this.radioButton1.UseVisualStyleBackColor = false;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.LightBlue;
-            this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(699, 64);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(77, 17);
-            this.radioButton2.TabIndex = 8;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "MS Course";
-            this.radioButton2.UseVisualStyleBackColor = false;
             // 
             // Manage_Courses
             // 
@@ -228,13 +228,13 @@
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
+        private System.Windows.Forms.BindingSource manageCoursesBindingSource;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewButtonColumn Actions;
-        private System.Windows.Forms.BindingSource manageCoursesBindingSource;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
     }
 }

@@ -35,11 +35,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.name = new System.Windows.Forms.TextBox();
+            this.Email = new System.Windows.Forms.TextBox();
+            this.cnic = new System.Windows.Forms.TextBox();
+            this.Reg = new System.Windows.Forms.TextBox();
+            this.date = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -50,7 +50,7 @@
             this.Bsstd = new System.Windows.Forms.RadioButton();
             this.Msstd = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.sem = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -128,46 +128,46 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Date of Birth";
             // 
-            // textBox1
+            // name
             // 
-            this.textBox1.BackColor = System.Drawing.Color.MistyRose;
-            this.textBox1.Location = new System.Drawing.Point(214, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 20);
-            this.textBox1.TabIndex = 6;
+            this.name.BackColor = System.Drawing.Color.MistyRose;
+            this.name.Location = new System.Drawing.Point(214, 92);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(182, 20);
+            this.name.TabIndex = 6;
             // 
-            // textBox2
+            // Email
             // 
-            this.textBox2.BackColor = System.Drawing.Color.MistyRose;
-            this.textBox2.Location = new System.Drawing.Point(214, 229);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(182, 20);
-            this.textBox2.TabIndex = 7;
+            this.Email.BackColor = System.Drawing.Color.MistyRose;
+            this.Email.Location = new System.Drawing.Point(214, 229);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(182, 20);
+            this.Email.TabIndex = 7;
             // 
-            // textBox3
+            // cnic
             // 
-            this.textBox3.BackColor = System.Drawing.Color.MistyRose;
-            this.textBox3.Location = new System.Drawing.Point(214, 194);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(182, 20);
-            this.textBox3.TabIndex = 8;
+            this.cnic.BackColor = System.Drawing.Color.MistyRose;
+            this.cnic.Location = new System.Drawing.Point(214, 194);
+            this.cnic.Name = "cnic";
+            this.cnic.Size = new System.Drawing.Size(182, 20);
+            this.cnic.TabIndex = 8;
             // 
-            // textBox4
+            // Reg
             // 
-            this.textBox4.BackColor = System.Drawing.Color.MistyRose;
-            this.textBox4.Location = new System.Drawing.Point(214, 121);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(182, 20);
-            this.textBox4.TabIndex = 9;
+            this.Reg.BackColor = System.Drawing.Color.MistyRose;
+            this.Reg.Location = new System.Drawing.Point(214, 121);
+            this.Reg.Name = "Reg";
+            this.Reg.Size = new System.Drawing.Size(182, 20);
+            this.Reg.TabIndex = 9;
             // 
-            // dateTimePicker1
+            // date
             // 
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.MistyRose;
-            this.dateTimePicker1.Location = new System.Drawing.Point(214, 266);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(182, 20);
-            this.dateTimePicker1.TabIndex = 11;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.date.CalendarMonthBackground = System.Drawing.Color.MistyRose;
+            this.date.Location = new System.Drawing.Point(214, 266);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(182, 20);
+            this.date.TabIndex = 11;
+            this.date.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // button1
             // 
@@ -293,13 +293,13 @@
             this.panel1.Size = new System.Drawing.Size(122, 212);
             this.panel1.TabIndex = 18;
             // 
-            // textBox5
+            // sem
             // 
-            this.textBox5.BackColor = System.Drawing.Color.MistyRose;
-            this.textBox5.Location = new System.Drawing.Point(215, 158);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(181, 20);
-            this.textBox5.TabIndex = 19;
+            this.sem.BackColor = System.Drawing.Color.MistyRose;
+            this.sem.Location = new System.Drawing.Point(215, 158);
+            this.sem.Name = "sem";
+            this.sem.Size = new System.Drawing.Size(181, 20);
+            this.sem.TabIndex = 19;
             // 
             // AddupdateStudent
             // 
@@ -308,18 +308,18 @@
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(471, 360);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.sem);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Msstd);
             this.Controls.Add(this.Bsstd);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.date);
+            this.Controls.Add(this.Reg);
+            this.Controls.Add(this.cnic);
+            this.Controls.Add(this.Email);
+            this.Controls.Add(this.name);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -345,11 +345,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox name;
+        private System.Windows.Forms.TextBox Email;
+        private System.Windows.Forms.TextBox cnic;
+        private System.Windows.Forms.TextBox Reg;
+        private System.Windows.Forms.DateTimePicker date;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -360,6 +360,6 @@
         private System.Windows.Forms.RadioButton Msstd;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox sem;
     }
 }
