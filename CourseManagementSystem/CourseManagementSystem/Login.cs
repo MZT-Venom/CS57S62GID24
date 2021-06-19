@@ -13,7 +13,7 @@ namespace CourseManagementSystem
     public partial class Login : Form
     {
         String Username;
-        String Password;
+        //String Password;
         public Login()
         {
             InitializeComponent();

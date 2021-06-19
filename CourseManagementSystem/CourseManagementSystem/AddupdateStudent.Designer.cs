@@ -39,18 +39,18 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.logOutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Bsstd = new System.Windows.Forms.RadioButton();
+            this.Msstd = new System.Windows.Forms.RadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -160,15 +160,6 @@
             this.textBox4.Size = new System.Drawing.Size(182, 20);
             this.textBox4.TabIndex = 9;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.MistyRose;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(214, 157);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(182, 21);
-            this.comboBox1.TabIndex = 10;
-            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.MistyRose;
@@ -236,11 +227,19 @@
             this.changePasswordToolStripMenuItem.Text = "Change Password";
             this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
             // 
+            // logOutToolStripMenuItem1
+            // 
+            this.logOutToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logOutToolStripMenuItem1.Name = "logOutToolStripMenuItem1";
+            this.logOutToolStripMenuItem1.Size = new System.Drawing.Size(73, 24);
+            this.logOutToolStripMenuItem1.Text = "LogOut";
+            this.logOutToolStripMenuItem1.Click += new System.EventHandler(this.logOutToolStripMenuItem1_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CourseManagementSystem.Properties.Resources.close_button_png_30247;
             this.pictureBox1.Location = new System.Drawing.Point(696, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(23, 21);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -248,35 +247,37 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // radioButton1
+            // Bsstd
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.Linen;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.SteelBlue;
-            this.radioButton1.Location = new System.Drawing.Point(214, 57);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(89, 17);
-            this.radioButton1.TabIndex = 16;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "BS Student";
-            this.radioButton1.UseVisualStyleBackColor = false;
+            this.Bsstd.AutoSize = true;
+            this.Bsstd.BackColor = System.Drawing.Color.Linen;
+            this.Bsstd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bsstd.ForeColor = System.Drawing.Color.SteelBlue;
+            this.Bsstd.Location = new System.Drawing.Point(214, 57);
+            this.Bsstd.Margin = new System.Windows.Forms.Padding(2);
+            this.Bsstd.Name = "Bsstd";
+            this.Bsstd.Size = new System.Drawing.Size(89, 17);
+            this.Bsstd.TabIndex = 16;
+            this.Bsstd.TabStop = true;
+            this.Bsstd.Text = "BS Student";
+            this.Bsstd.UseVisualStyleBackColor = false;
+            this.Bsstd.CheckedChanged += new System.EventHandler(this.Bsstd_CheckedChanged);
             // 
-            // radioButton2
+            // Msstd
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.Linen;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.SteelBlue;
-            this.radioButton2.Location = new System.Drawing.Point(321, 57);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(91, 17);
-            this.radioButton2.TabIndex = 17;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "MS Student";
-            this.radioButton2.UseVisualStyleBackColor = false;
+            this.Msstd.AutoSize = true;
+            this.Msstd.BackColor = System.Drawing.Color.Linen;
+            this.Msstd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msstd.ForeColor = System.Drawing.Color.SteelBlue;
+            this.Msstd.Location = new System.Drawing.Point(321, 57);
+            this.Msstd.Margin = new System.Windows.Forms.Padding(2);
+            this.Msstd.Name = "Msstd";
+            this.Msstd.Size = new System.Drawing.Size(91, 17);
+            this.Msstd.TabIndex = 17;
+            this.Msstd.TabStop = true;
+            this.Msstd.Text = "MS Student";
+            this.Msstd.UseVisualStyleBackColor = false;
+            this.Msstd.CheckedChanged += new System.EventHandler(this.Msstd_CheckedChanged);
             // 
             // panel1
             // 
@@ -292,13 +293,13 @@
             this.panel1.Size = new System.Drawing.Size(122, 212);
             this.panel1.TabIndex = 18;
             // 
-            // logOutToolStripMenuItem1
+            // textBox5
             // 
-            this.logOutToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logOutToolStripMenuItem1.Name = "logOutToolStripMenuItem1";
-            this.logOutToolStripMenuItem1.Size = new System.Drawing.Size(73, 24);
-            this.logOutToolStripMenuItem1.Text = "LogOut";
-            this.logOutToolStripMenuItem1.Click += new System.EventHandler(this.logOutToolStripMenuItem1_Click);
+            this.textBox5.BackColor = System.Drawing.Color.MistyRose;
+            this.textBox5.Location = new System.Drawing.Point(215, 158);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(181, 20);
+            this.textBox5.TabIndex = 19;
             // 
             // AddupdateStudent
             // 
@@ -307,14 +308,14 @@
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(471, 360);
+            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.Msstd);
+            this.Controls.Add(this.Bsstd);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -348,7 +349,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
@@ -356,9 +356,10 @@
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton Bsstd;
+        private System.Windows.Forms.RadioButton Msstd;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem1;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }

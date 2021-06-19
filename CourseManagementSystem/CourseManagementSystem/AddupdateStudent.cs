@@ -46,7 +46,8 @@ namespace CourseManagementSystem
 
         private void AddupdateStudent_Load(object sender, EventArgs e)
         {
-
+           
+          
         }
 
         private void logOutToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -64,6 +65,21 @@ namespace CourseManagementSystem
             chngpass.Show();
             this.Hide();
             chngpass.BringToFront();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Bsstd_CheckedChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void Msstd_CheckedChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }
