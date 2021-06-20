@@ -91,7 +91,45 @@ namespace CourseManagementSystem
 
         private void Manage_Courses_Load(object sender, EventArgs e)
         {
+            DataColumn c1 = new DataColumn("CourseCode");
+            DataColumn c2 = new DataColumn("CourseName");
+            DataColumn c3 = new DataColumn("Semester");
+            DataColumn c4 = new DataColumn("CreditHours");
+            table.Columns.Add(c1);
+            table.Columns.Add(c2);
+            table.Columns.Add(c3);
+            table.Columns.Add(c4);
             dataGridView1.DataSource = table;
+        }
+
+        private void Manage_Courses_Load_1(object sender, EventArgs e)
+        {
+            DataColumn c1 = new DataColumn("CourseCode");
+            DataColumn c2 = new DataColumn("CourseName");
+            DataColumn c3 = new DataColumn("Semester");
+            DataColumn c4 = new DataColumn("CreditHours");
+            table.Columns.Add(c1);
+            table.Columns.Add(c2);
+            table.Columns.Add(c3);
+            table.Columns.Add(c4);
+            dataGridView1.DataSource = table;
+        }
+
+        private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
+        {
+            string cc;
+            string cn;
+            int sem;
+            int cr;
+            HashSet<BSCourses>.Enumerator em = driver.bsCourse.BsCourseList.GetEnumerator();
+            while (em.MoveNext())
+            {
+                cc = em.Current.CourseCode;
+                cn = em.Current.CourseName;
+                sem = em.Current.Semester;
+                cr = em.Current.CrHr;
+                table.Rows.Add(em.Current.CourseCode, em.Current.CourseName, em.Current.Semester, em.Current.CrHr);
+            }
         }
     }
 }
