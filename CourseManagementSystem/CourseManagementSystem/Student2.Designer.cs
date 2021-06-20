@@ -242,6 +242,7 @@ namespace CourseManagementSystem
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Student2";
             this.Text = "Student2";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Student2_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

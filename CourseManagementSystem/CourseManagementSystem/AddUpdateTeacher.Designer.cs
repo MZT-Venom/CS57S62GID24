@@ -42,7 +42,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.AddteahcerBack = new System.Windows.Forms.Button();
             this.AddTeacherbtn = new System.Windows.Forms.Button();
-            this.Name = new System.Windows.Forms.TextBox();
+            this.name = new System.Windows.Forms.TextBox();
             this.Cnic = new System.Windows.Forms.TextBox();
             this.ID = new System.Windows.Forms.TextBox();
             this.mail = new System.Windows.Forms.TextBox();
@@ -221,12 +221,12 @@
             this.AddTeacherbtn.UseVisualStyleBackColor = false;
             this.AddTeacherbtn.Click += new System.EventHandler(this.AddTeacherbtn_Click);
             // 
-            // Name
+            // name
             // 
-            this.Name.Location = new System.Drawing.Point(186, 36);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(182, 20);
-            this.Name.TabIndex = 10;
+            this.name.Location = new System.Drawing.Point(186, 36);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(182, 20);
+            this.name.TabIndex = 10;
             // 
             // Cnic
             // 
@@ -313,7 +313,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Lavender;
-            this.panel1.Controls.Add(this.Name);
+            this.panel1.Controls.Add(this.name);
             this.panel1.Controls.Add(this.GA);
             this.panel1.Controls.Add(this.ID);
             this.panel1.Controls.Add(this.tchr);
@@ -362,6 +362,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "AddUpdateTeacher";
             this.Text = "AddUpdateTeacher";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddUpdateTeacher_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -386,7 +387,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button AddteahcerBack;
         private System.Windows.Forms.Button AddTeacherbtn;
-        private System.Windows.Forms.TextBox Name;
+        private System.Windows.Forms.TextBox name;
         private System.Windows.Forms.TextBox Cnic;
         private System.Windows.Forms.TextBox ID;
         private System.Windows.Forms.TextBox mail;

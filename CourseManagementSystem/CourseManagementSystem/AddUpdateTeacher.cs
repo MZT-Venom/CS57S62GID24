@@ -147,5 +147,10 @@ namespace CourseManagementSystem
             this.Hide();
             chngpass.BringToFront();
         }
+
+        private void AddUpdateTeacher_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

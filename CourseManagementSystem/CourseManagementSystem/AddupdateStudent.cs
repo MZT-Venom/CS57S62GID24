@@ -293,5 +293,10 @@ namespace CourseManagementSystem
         {
            
         }
+
+        private void AddupdateStudent_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

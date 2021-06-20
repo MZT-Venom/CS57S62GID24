@@ -76,5 +76,10 @@ namespace CourseManagementSystem
         {
           //  Username = LoginUN.Text;
         }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
