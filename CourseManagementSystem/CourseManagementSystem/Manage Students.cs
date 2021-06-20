@@ -49,5 +49,10 @@ namespace CourseManagementSystem
             this.Hide();
             chngpass.BringToFront();
         }
+
+        private void Manage_Students_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -61,15 +61,14 @@
             // menuStrip1
             // 
             this.menuStrip1.BackgroundImage = global::CourseManagementSystem.Properties.Resources.images__7_;
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.optionsToolStripMenuItem,
             this.logOutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(914, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(609, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -81,7 +80,7 @@
             this.optionsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.optionsToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(95, 29);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(62, 22);
             this.optionsToolStripMenuItem.Text = "Options";
             // 
             // changePasswordToolStripMenuItem
@@ -90,7 +89,7 @@
             this.changePasswordToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.changePasswordToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(263, 34);
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.changePasswordToolStripMenuItem.Text = "Change Password";
             this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
             // 
@@ -98,7 +97,7 @@
             // 
             this.logOutToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(91, 29);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(60, 22);
             this.logOutToolStripMenuItem.Text = "LogOut";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -109,10 +108,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(75, 55);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(50, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 25);
+            this.label1.Size = new System.Drawing.Size(49, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Name";
             // 
@@ -122,10 +120,9 @@
             this.label2.BackColor = System.Drawing.Color.Lavender;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(75, 100);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(50, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 25);
+            this.label2.Size = new System.Drawing.Size(23, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "ID";
             // 
@@ -136,10 +133,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label3.Location = new System.Drawing.Point(75, 140);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(50, 91);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 25);
+            this.label3.Size = new System.Drawing.Size(43, 17);
             this.label3.TabIndex = 3;
             this.label3.Text = "CNIC";
             // 
@@ -150,10 +146,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(75, 182);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(50, 118);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 25);
+            this.label4.Size = new System.Drawing.Size(99, 17);
             this.label4.TabIndex = 4;
             this.label4.Text = "Qualification";
             // 
@@ -164,10 +159,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(76, 222);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(51, 144);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 25);
+            this.label5.Size = new System.Drawing.Size(67, 17);
             this.label5.TabIndex = 5;
             this.label5.Text = "Email ID";
             // 
@@ -178,10 +172,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label6.Location = new System.Drawing.Point(75, 263);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(50, 171);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(131, 25);
+            this.label6.Size = new System.Drawing.Size(100, 17);
             this.label6.TabIndex = 6;
             this.label6.Text = "Date of Birth";
             // 
@@ -192,10 +185,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label7.Location = new System.Drawing.Point(75, 303);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(50, 197);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(126, 25);
+            this.label7.Size = new System.Drawing.Size(94, 17);
             this.label7.TabIndex = 7;
             this.label7.Text = "Designation";
             // 
@@ -206,10 +198,9 @@
             this.AddteahcerBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddteahcerBack.ForeColor = System.Drawing.Color.MidnightBlue;
             this.AddteahcerBack.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.AddteahcerBack.Location = new System.Drawing.Point(279, 382);
-            this.AddteahcerBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.AddteahcerBack.Location = new System.Drawing.Point(186, 248);
             this.AddteahcerBack.Name = "AddteahcerBack";
-            this.AddteahcerBack.Size = new System.Drawing.Size(112, 35);
+            this.AddteahcerBack.Size = new System.Drawing.Size(75, 23);
             this.AddteahcerBack.TabIndex = 8;
             this.AddteahcerBack.Text = "Back";
             this.AddteahcerBack.UseVisualStyleBackColor = false;
@@ -222,10 +213,9 @@
             this.AddTeacherbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddTeacherbtn.ForeColor = System.Drawing.Color.MidnightBlue;
             this.AddTeacherbtn.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.AddTeacherbtn.Location = new System.Drawing.Point(426, 382);
-            this.AddTeacherbtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.AddTeacherbtn.Location = new System.Drawing.Point(284, 248);
             this.AddTeacherbtn.Name = "AddTeacherbtn";
-            this.AddTeacherbtn.Size = new System.Drawing.Size(112, 35);
+            this.AddTeacherbtn.Size = new System.Drawing.Size(75, 23);
             this.AddTeacherbtn.TabIndex = 9;
             this.AddTeacherbtn.Text = "Done";
             this.AddTeacherbtn.UseVisualStyleBackColor = false;
@@ -233,42 +223,37 @@
             // 
             // name
             // 
-            this.name.Location = new System.Drawing.Point(279, 55);
-            this.name.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.name.Location = new System.Drawing.Point(186, 36);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(271, 26);
+            this.name.Size = new System.Drawing.Size(182, 20);
             this.name.TabIndex = 10;
             // 
             // Cnic
             // 
-            this.Cnic.Location = new System.Drawing.Point(279, 135);
-            this.Cnic.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Cnic.Location = new System.Drawing.Point(186, 88);
             this.Cnic.Name = "Cnic";
-            this.Cnic.Size = new System.Drawing.Size(271, 26);
+            this.Cnic.Size = new System.Drawing.Size(182, 20);
             this.Cnic.TabIndex = 11;
             // 
             // ID
             // 
-            this.ID.Location = new System.Drawing.Point(279, 95);
-            this.ID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ID.Location = new System.Drawing.Point(186, 62);
             this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(271, 26);
+            this.ID.Size = new System.Drawing.Size(182, 20);
             this.ID.TabIndex = 12;
             // 
             // mail
             // 
-            this.mail.Location = new System.Drawing.Point(279, 217);
-            this.mail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.mail.Location = new System.Drawing.Point(186, 141);
             this.mail.Name = "mail";
-            this.mail.Size = new System.Drawing.Size(271, 26);
+            this.mail.Size = new System.Drawing.Size(182, 20);
             this.mail.TabIndex = 13;
             // 
             // date
             // 
-            this.date.Location = new System.Drawing.Point(279, 257);
-            this.date.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.date.Location = new System.Drawing.Point(186, 167);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(271, 26);
+            this.date.Size = new System.Drawing.Size(182, 20);
             this.date.TabIndex = 14;
             // 
             // Designation
@@ -277,18 +262,18 @@
             this.Designation.Items.AddRange(new object[] {
             "GA",
             "Teacher"});
-            this.Designation.Location = new System.Drawing.Point(279, 297);
-            this.Designation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Designation.Location = new System.Drawing.Point(186, 193);
             this.Designation.Name = "Designation";
-            this.Designation.Size = new System.Drawing.Size(271, 28);
+            this.Designation.Size = new System.Drawing.Size(182, 21);
             this.Designation.TabIndex = 16;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CourseManagementSystem.Properties.Resources.close_button_png_30247;
-            this.pictureBox1.Location = new System.Drawing.Point(890, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(593, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 32);
+            this.pictureBox1.Size = new System.Drawing.Size(25, 21);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
@@ -300,9 +285,10 @@
             this.tchr.BackColor = System.Drawing.Color.Lavender;
             this.tchr.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tchr.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.tchr.Location = new System.Drawing.Point(279, 22);
+            this.tchr.Location = new System.Drawing.Point(186, 14);
+            this.tchr.Margin = new System.Windows.Forms.Padding(2);
             this.tchr.Name = "tchr";
-            this.tchr.Size = new System.Drawing.Size(99, 24);
+            this.tchr.Size = new System.Drawing.Size(72, 17);
             this.tchr.TabIndex = 18;
             this.tchr.TabStop = true;
             this.tchr.Text = "Teacher";
@@ -315,9 +301,10 @@
             this.GA.BackColor = System.Drawing.Color.Lavender;
             this.GA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GA.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.GA.Location = new System.Drawing.Point(406, 22);
+            this.GA.Location = new System.Drawing.Point(271, 14);
+            this.GA.Margin = new System.Windows.Forms.Padding(2);
             this.GA.Name = "GA";
-            this.GA.Size = new System.Drawing.Size(60, 24);
+            this.GA.Size = new System.Drawing.Size(42, 17);
             this.GA.TabIndex = 19;
             this.GA.TabStop = true;
             this.GA.Text = "GA";
@@ -344,10 +331,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(116, 58);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(77, 38);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(674, 492);
+            this.panel1.Size = new System.Drawing.Size(449, 320);
             this.panel1.TabIndex = 20;
             // 
             // qualification
@@ -356,28 +342,27 @@
             this.qualification.Items.AddRange(new object[] {
             "MS",
             "Phd"});
-            this.qualification.Location = new System.Drawing.Point(279, 175);
-            this.qualification.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.qualification.Location = new System.Drawing.Point(186, 114);
             this.qualification.Name = "qualification";
-            this.qualification.Size = new System.Drawing.Size(271, 28);
+            this.qualification.Size = new System.Drawing.Size(182, 21);
             this.qualification.TabIndex = 15;
             // 
             // AddUpdateTeacher
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(914, 603);
+            this.ClientSize = new System.Drawing.Size(609, 392);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AddUpdateTeacher";
             this.Text = "AddUpdateTeacher";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddUpdateTeacher_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

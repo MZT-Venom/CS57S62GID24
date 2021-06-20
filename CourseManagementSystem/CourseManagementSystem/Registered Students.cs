@@ -30,5 +30,10 @@ namespace CourseManagementSystem
             log.BringToFront();
             
         }
+
+        private void Registered_Students_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

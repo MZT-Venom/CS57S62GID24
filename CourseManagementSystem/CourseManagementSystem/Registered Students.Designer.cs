@@ -33,13 +33,13 @@
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logOutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
-            this.logOutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -72,14 +72,23 @@
             // changePasswordToolStripMenuItem
             // 
             this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.changePasswordToolStripMenuItem.Text = "Change Password";
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.logoutToolStripMenuItem.Text = "logout";
+            // 
+            // logOutToolStripMenuItem1
+            // 
+            this.logOutToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logOutToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.logOutToolStripMenuItem1.Name = "logOutToolStripMenuItem1";
+            this.logOutToolStripMenuItem1.Size = new System.Drawing.Size(66, 22);
+            this.logOutToolStripMenuItem1.Text = "LogOut";
+            this.logOutToolStripMenuItem1.Click += new System.EventHandler(this.logOutToolStripMenuItem1_Click);
             // 
             // dataGridView1
             // 
@@ -136,15 +145,6 @@
             this.button1.Text = "ADD";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // logOutToolStripMenuItem1
-            // 
-            this.logOutToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logOutToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
-            this.logOutToolStripMenuItem1.Name = "logOutToolStripMenuItem1";
-            this.logOutToolStripMenuItem1.Size = new System.Drawing.Size(66, 22);
-            this.logOutToolStripMenuItem1.Text = "LogOut";
-            this.logOutToolStripMenuItem1.Click += new System.EventHandler(this.logOutToolStripMenuItem1_Click);
-            // 
             // Registered_Students
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,6 +159,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Registered_Students";
             this.Text = "Registered_Students";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Registered_Students_FormClosing);
             this.Load += new System.EventHandler(this.Registered_Students_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
