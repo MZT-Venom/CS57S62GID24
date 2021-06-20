@@ -12,6 +12,93 @@ namespace CourseManagementSystem
 {
     public partial class AddUpdateTeacher : Form
     {
+        public static bool validateName(String name) {
+            bool flag = false;
+            int size = name.Length;
+            for (int i = 0; i < size; i++)
+            {
+                if ((name[i] >= 'a' && name[i] <= 'z') || (name[i] >= 'A' && name[i] <= 'Z') || (name[i] >= '0' && name[i] <= '9'))
+                {
+                    flag = true;
+                }
+                else
+                {
+                    flag = false;
+                    break;
+                }
+            }
+            return flag;
+        }
+        public static bool validateCnic(String Cnic) {
+            bool flag = false;
+            int size = Cnic.Length;
+            if (size == 13)
+            {
+                for (int i = 0; i < size; i++)
+                {
+                    if (Cnic[i] >= '0' && Cnic[i] <= '9')
+                    {
+                        flag = true;
+
+                    }
+                    else
+                    {
+                        flag = false;
+                        break;
+                    }
+
+                }
+            }
+            else
+            {
+                flag = false;
+            }
+            return flag;
+        }
+        public static bool validateMail(String mail)
+        {
+            bool flag = false;
+            int size = mail.Length;
+
+            for (int i = 0; i < size; i++)
+            {
+                if (mail.Contains("@"))
+                {
+                    for (int j = 0; j < size; j++)
+                    {
+                        if (mail[j] == '.')
+                        {
+                            flag = true;
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    flag = false;
+                    break;
+                }
+            }
+
+            return flag;
+        }
+        public static bool validateId(String Id) {
+            bool flag = false;
+            int size = Id.Length;
+            for(int i = 0; i < size; i++)
+            {
+                if (Id[i] >= '0' && Id[i] <= '9')
+                {
+                    flag = true;
+                }
+                else
+                {
+                    flag = false;
+                    break;
+                }
+            }
+            return flag;
+        }
         public AddUpdateTeacher()
         {
             InitializeComponent();
@@ -37,6 +124,7 @@ namespace CourseManagementSystem
 
         private void AddTeacherbtn_Click(object sender, EventArgs e)
         {
+
             MessageBox.Show("Instructor has been added successfully!");
             ManageTeacher mngtch = new ManageTeacher();
             mngtch.Show();

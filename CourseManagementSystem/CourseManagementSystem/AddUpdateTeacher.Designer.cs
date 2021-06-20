@@ -42,17 +42,17 @@
             this.label7 = new System.Windows.Forms.Label();
             this.AddteahcerBack = new System.Windows.Forms.Button();
             this.AddTeacherbtn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.Name = new System.Windows.Forms.TextBox();
+            this.Cnic = new System.Windows.Forms.TextBox();
+            this.ID = new System.Windows.Forms.TextBox();
+            this.mail = new System.Windows.Forms.TextBox();
+            this.date = new System.Windows.Forms.DateTimePicker();
+            this.Designation = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tchr = new System.Windows.Forms.RadioButton();
             this.GA = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.qualification = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -221,48 +221,51 @@
             this.AddTeacherbtn.UseVisualStyleBackColor = false;
             this.AddTeacherbtn.Click += new System.EventHandler(this.AddTeacherbtn_Click);
             // 
-            // textBox1
+            // Name
             // 
-            this.textBox1.Location = new System.Drawing.Point(186, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 20);
-            this.textBox1.TabIndex = 10;
+            this.Name.Location = new System.Drawing.Point(186, 36);
+            this.Name.Name = "Name";
+            this.Name.Size = new System.Drawing.Size(182, 20);
+            this.Name.TabIndex = 10;
             // 
-            // textBox2
+            // Cnic
             // 
-            this.textBox2.Location = new System.Drawing.Point(186, 88);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(182, 20);
-            this.textBox2.TabIndex = 11;
+            this.Cnic.Location = new System.Drawing.Point(186, 88);
+            this.Cnic.Name = "Cnic";
+            this.Cnic.Size = new System.Drawing.Size(182, 20);
+            this.Cnic.TabIndex = 11;
             // 
-            // textBox3
+            // ID
             // 
-            this.textBox3.Location = new System.Drawing.Point(186, 62);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(182, 20);
-            this.textBox3.TabIndex = 12;
+            this.ID.Location = new System.Drawing.Point(186, 62);
+            this.ID.Name = "ID";
+            this.ID.Size = new System.Drawing.Size(182, 20);
+            this.ID.TabIndex = 12;
             // 
-            // textBox4
+            // mail
             // 
-            this.textBox4.Location = new System.Drawing.Point(186, 141);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(182, 20);
-            this.textBox4.TabIndex = 13;
+            this.mail.Location = new System.Drawing.Point(186, 141);
+            this.mail.Name = "mail";
+            this.mail.Size = new System.Drawing.Size(182, 20);
+            this.mail.TabIndex = 13;
             // 
-            // dateTimePicker1
+            // date
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(186, 167);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(182, 20);
-            this.dateTimePicker1.TabIndex = 14;
+            this.date.Location = new System.Drawing.Point(186, 167);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(182, 20);
+            this.date.TabIndex = 14;
             // 
-            // comboBox2
+            // Designation
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(186, 193);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(182, 21);
-            this.comboBox2.TabIndex = 16;
+            this.Designation.FormattingEnabled = true;
+            this.Designation.Items.AddRange(new object[] {
+            "GA",
+            "Teacher"});
+            this.Designation.Location = new System.Drawing.Point(186, 193);
+            this.Designation.Name = "Designation";
+            this.Designation.Size = new System.Drawing.Size(182, 21);
+            this.Designation.TabIndex = 16;
             // 
             // pictureBox1
             // 
@@ -310,18 +313,18 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Lavender;
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.Name);
             this.panel1.Controls.Add(this.GA);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.ID);
             this.panel1.Controls.Add(this.tchr);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.Cnic);
+            this.panel1.Controls.Add(this.qualification);
             this.panel1.Controls.Add(this.AddTeacherbtn);
-            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.Designation);
             this.panel1.Controls.Add(this.AddteahcerBack);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.mail);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.date);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label5);
@@ -333,13 +336,16 @@
             this.panel1.Size = new System.Drawing.Size(449, 320);
             this.panel1.TabIndex = 20;
             // 
-            // comboBox1
+            // qualification
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(186, 114);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(182, 21);
-            this.comboBox1.TabIndex = 15;
+            this.qualification.FormattingEnabled = true;
+            this.qualification.Items.AddRange(new object[] {
+            "MS",
+            "Phd"});
+            this.qualification.Location = new System.Drawing.Point(186, 114);
+            this.qualification.Name = "qualification";
+            this.qualification.Size = new System.Drawing.Size(182, 21);
+            this.qualification.TabIndex = 15;
             // 
             // AddUpdateTeacher
             // 
@@ -380,17 +386,17 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button AddteahcerBack;
         private System.Windows.Forms.Button AddTeacherbtn;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox Name;
+        private System.Windows.Forms.TextBox Cnic;
+        private System.Windows.Forms.TextBox ID;
+        private System.Windows.Forms.TextBox mail;
+        private System.Windows.Forms.DateTimePicker date;
+        private System.Windows.Forms.ComboBox Designation;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.RadioButton tchr;
         private System.Windows.Forms.RadioButton GA;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox qualification;
     }
 }
