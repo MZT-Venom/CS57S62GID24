@@ -8,7 +8,7 @@ namespace CourseManagementSystem
 {
     class UgStudentManagement
     {
-        private static UgStudentManagement obj = null;
+        private static UgStudentManagement obj;
         public HashSet<UnderGraduate> ugList = new HashSet<UnderGraduate>();
         public void Add(UnderGraduate st)
         {

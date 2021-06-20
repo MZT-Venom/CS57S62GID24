@@ -53,8 +53,7 @@
             this.logOutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(941, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(880, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -65,7 +64,7 @@
             this.optionsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optionsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(62, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(95, 29);
             this.optionsToolStripMenuItem.Text = "Options";
             // 
             // changePasswordToolStripMenuItem
@@ -73,7 +72,7 @@
             this.changePasswordToolStripMenuItem.BackgroundImage = global::CourseManagementSystem.Properties.Resources.instructor;
             this.changePasswordToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(263, 34);
             this.changePasswordToolStripMenuItem.Text = "Change Password";
             this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
             // 
@@ -82,7 +81,7 @@
             this.logOutToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logOutToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(60, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(91, 29);
             this.logOutToolStripMenuItem.Text = "LogOut";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -97,10 +96,11 @@
             this.Column4,
             this.Column5});
             this.dataGridView1.GridColor = System.Drawing.Color.Teal;
-            this.dataGridView1.Location = new System.Drawing.Point(48, 108);
+            this.dataGridView1.Location = new System.Drawing.Point(38, 121);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(814, 194);
+            this.dataGridView1.Size = new System.Drawing.Size(816, 255);
             this.dataGridView1.TabIndex = 1;
             // 
             // Column1
@@ -140,16 +140,17 @@
             // 
             // Teacher
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Purple;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(941, 412);
+            this.ClientSize = new System.Drawing.Size(880, 504);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.Window;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Teacher";
             this.Text = "Teacher";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Teacher_FormClosing);

@@ -8,7 +8,7 @@ namespace CourseManagementSystem
 {
     class PgStudentManagement
     {
-        private static PgStudentManagement obj = null;
+        private static PgStudentManagement obj;
         public HashSet<PostGraduate> pgList = new HashSet<PostGraduate>();
         public void Add(PostGraduate st)
         {

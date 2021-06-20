@@ -8,7 +8,7 @@ namespace CourseManagementSystem
 {
     class MsCourseManagement
     {
-        private static MsCourseManagement obj = new MsCourseManagement();
+        private static MsCourseManagement obj ;
         public HashSet<MSCourses> MsCourseList = new HashSet<MSCourses>();
         public bool AddCourse(MSCourses course)
         {
@@ -40,7 +40,7 @@ namespace CourseManagementSystem
         {
             if (obj == null)
             {
-                MsCourseManagement obj = new MsCourseManagement();
+                obj = new MsCourseManagement();
             }
             return obj;
         }
