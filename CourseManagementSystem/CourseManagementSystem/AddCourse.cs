@@ -12,7 +12,7 @@ namespace CourseManagementSystem
 {
     public partial class AddCourse : Form
     {
-        
+        private Driver driver = new Driver();
         public static bool verifycoursecode(string coursecode ) {
             bool flag = false;
             // if (coursecode)) { }
@@ -50,7 +50,7 @@ namespace CourseManagementSystem
             bool flag = false;
             int length = crdthr.Length;
             for (int i = 0; i < length; i++) {
-                if (crdthr[i] >= '0' && crdthr[i] <= '9')
+                if (crdthr[i] >= '0' && crdthr[i] <= '8')
                 {
                     flag = true;
                 }
@@ -112,6 +112,18 @@ namespace CourseManagementSystem
                     int semest = Int16.Parse(semes);
                     ms.Semester = semest;
                     ms.Outline = outline.Text;
+                    
+                        if (driver.msCourse.AddCourse(ms))
+                        {
+                            MessageBox.Show("Course has been added successfully!");
+                            AddCourse addcr = new AddCourse();
+                            addcr.Show();
+                            this.Hide();
+                            addcr.BringToFront();
+                        }
+                        
+                   
+                    
                 }
                 else if (Bscourse.Checked)
                 {
@@ -123,17 +135,30 @@ namespace CourseManagementSystem
                     string semes = sem.Text;
                     int semest = Int16.Parse(semes);
                     bs.Semester = semest;
-                    ms.Outline = outline.Text;
+                    bs.Outline = outline.Text;
+                    
+                        if (driver.bsCourse.AddCourse(bs))
+                        {
+                            MessageBox.Show("Course has been added successfully!");
+                            AddCourse addcr = new AddCourse();
+                            addcr.Show();
+                            this.Hide();
+                            addcr.BringToFront();
+                        }
+                       
+                    
+                    
                 }
-                MessageBox.Show("Course has been added successfully!");
+                else
+                {
+                    MessageBox.Show("Please select the degree programm for course");
+                }
+                
             }
             else {
                 MessageBox.Show("Invalid Data!");
             }
-                AddCourse addcr = new AddCourse();            
-            addcr.Show();
-            this.Hide();
-            addcr.BringToFront();
+               
            
         }
 
@@ -182,6 +207,11 @@ namespace CourseManagementSystem
         private void Bscourse_CheckedChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

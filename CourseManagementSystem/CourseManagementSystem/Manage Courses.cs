@@ -12,6 +12,7 @@ namespace CourseManagementSystem
 {
     public partial class Manage_Courses : Form
     {
+        DataTable table = new DataTable();
         Driver driver = new Driver();
         public Manage_Courses()
         {
@@ -68,6 +69,29 @@ namespace CourseManagementSystem
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            HashSet<BSCourses>.Enumerator em = driver.bsCourse.BsCourseList.GetEnumerator();
+            while (em.MoveNext())
+            {
+                table.Rows.Add(em.Current.CourseCode, em.Current.CourseName, em.Current.Semester, em.Current.CrHr);
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            HashSet<MSCourses>.Enumerator em = driver.msCourse.MsCourseList.GetEnumerator();
+            while (em.MoveNext())
+            {
+                table.Rows.Add(em.Current.CourseCode, em.Current.CourseName, em.Current.Semester, em.Current.CrHr);
+            }
+        }
+
+        private void Manage_Courses_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = table;
         }
     }
 }
